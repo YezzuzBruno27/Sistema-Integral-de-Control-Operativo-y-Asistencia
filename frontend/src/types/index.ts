@@ -20,7 +20,7 @@ export interface Vehicle {
 export interface Activity {
   id: string;
   code?: string; // Ej: "R0124195" (Opcional, para trabajos de oficina no aplica)
-  num_rep: string; // Ej: "REP1-119" (Opcional, para trabajos de oficina no aplica)
+  num_rep?: string; // Ej: "REP1-119" (Opcional, para trabajos de oficina no aplica)
   description_rep: string; // Ej:"L1021 Inspección ligera" o "TRABAJOS EN OFICINA"
   location: string; // Ej: "Arequipa", "Nazca", "Cusco"
 }
@@ -29,7 +29,7 @@ export interface Activity {
 export interface DailyRecord {
   id: string;
   date: string; // Formato YYYY-MM-DD
-  dni: string;
+  fullName: string;
   activityId: string; // ¿En qué proyecto o frente de trabajo estuvo?
   vehiclePlate?: string; // ¿Qué camioneta usó? (Opcional)
   status: 'ASISTIÓ' | 'COMPENSA' | 'DESCANSO_MEDICO' | 'FALTA';
