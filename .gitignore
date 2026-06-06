@@ -1,0 +1,30 @@
+# ========================
+# FRONTEND (React / Node)
+# ========================
+# Dependencias
+node_modules/
+# Compilados
+dist/
+dist-ssr/
+# Logs y debugs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
+# ========================
+# GENERAL / SEGURIDAD
+# ========================
+# Variables de entorno (Secretos)
+.env
+.env.local
+.env.*.local
+
+# Configuraciones de editores/IDE
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
